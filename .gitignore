@@ -1,1 +1,4 @@
+*.json
+*.csv
+*.ipynb_checkpoints
 03git_init.ipynb
