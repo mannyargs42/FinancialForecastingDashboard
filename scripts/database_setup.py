@@ -104,7 +104,7 @@ def main():
 
         create_table(conn)
 
-        ingest_data(conn)
+        ingest_data(conn, file_path='raw_saas_data.json')
 
     except psycopg2.OperationalError as e:
         print(f"Connection error: {e}")

@@ -1,0 +1,15 @@
+
+# Write a sources.yml model for dbt to recognize and document raw data tables
+
+version: 2
+
+sources:
+  - name: raw
+    description: "Raw data ingested from external sources."
+    schema: public
+    tables:
+      - name: raw_saas_metrics
+        description: "Raw financial metrics data ingested from a JSON file."
+        tests:
+          - not_null:
+              column_name: "customer_id"

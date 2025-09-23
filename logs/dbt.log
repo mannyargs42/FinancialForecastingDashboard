@@ -195,3 +195,54 @@ Happy modeling!
 [0m05:53:02.189869 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9a8061fe30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9a8024bf80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9a7deb08f0>]}
 [0m05:53:02.190686 [debug] [MainThread]: Flushing usage events
 [0m05:53:02.318788 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:11:05.108817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a116ace6c60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1167ff76e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a116a06eab0>]}
+
+
+============================== 04:11:05.449736 | bea66667-5f95-4302-ae99-4947b5ef5f96 ==============================
+[0m04:11:05.449736 [info ] [MainThread]: Running with dbt=1.10.11
+[0m04:11:05.451379 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'version_check': 'True', 'log_format': 'default', 'warn_error': 'None', 'cache_selected_only': 'False', 'static_parser': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'invocation_command': 'dbt init financial_forecasting --profiles-dir /root/.dbt', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'log_cache_events': 'False', 'target_path': 'None', 'profiles_dir': '/root/.dbt', 'printer_width': '80', 'empty': 'None', 'partial_parse': 'True', 'quiet': 'False'}
+[0m04:11:05.538600 [info ] [MainThread]: Creating dbt configuration folder at /root/.dbt
+[0m04:11:05.543398 [info ] [MainThread]: A project called financial_forecasting already exists here.
+[0m04:11:05.546584 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.7753518, "process_in_blocks": "21144", "process_kernel_time": 0.513505, "process_mem_max_rss": "127812", "process_out_blocks": "11000", "process_user_time": 6.509067}
+[0m04:11:05.548761 [debug] [MainThread]: Command `dbt init` succeeded at 04:11:05.548429 after 0.78 seconds
+[0m04:11:05.550365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1167e64800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1167e83980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a1168b86f00>]}
+[0m04:11:05.552220 [debug] [MainThread]: Flushing usage events
+[0m04:11:05.716712 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:36:01.770678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2871eafec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2873aa26c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2871375a00>]}
+
+
+============================== 07:36:01.778333 | b4885292-efbd-49ca-90c6-eb7309117243 ==============================
+[0m07:36:01.778333 [info ] [MainThread]: Running with dbt=1.10.11
+[0m07:36:01.779706 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/root/.dbt', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'no_print': 'None', 'log_format': 'default', 'indirect_selection': 'eager', 'version_check': 'True', 'quiet': 'False', 'static_parser': 'True', 'debug': 'False', 'partial_parse': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt init financial_forecasting --profiles-dir /root/.dbt', 'printer_width': '80', 'target_path': 'None', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'use_colors': 'True', 'empty': 'None', 'log_path': 'logs'}
+[0m07:36:01.796020 [info ] [MainThread]: A project called financial_forecasting already exists here.
+[0m07:36:01.799097 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.1608685, "process_in_blocks": "0", "process_kernel_time": 0.455728, "process_mem_max_rss": "123676", "process_out_blocks": "0", "process_user_time": 4.092242}
+[0m07:36:01.800651 [debug] [MainThread]: Command `dbt init` succeeded at 07:36:01.800427 after 0.16 seconds
+[0m07:36:01.801812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2870e6fb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e287642be60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2871171730>]}
+[0m07:36:01.802895 [debug] [MainThread]: Flushing usage events
+[0m07:36:01.936768 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:43:52.057680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0c0b9c52b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0c08f84380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0c095bd070>]}
+
+
+============================== 22:43:52.408683 | 120bf94a-1f9b-4c2a-ac0d-f3bb24e79bbf ==============================
+[0m22:43:52.408683 [info ] [MainThread]: Running with dbt=1.10.11
+[0m22:43:52.411137 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/root/.dbt', 'indirect_selection': 'eager', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'quiet': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init financial_forecasting --profiles-dir /root/.dbt', 'cache_selected_only': 'False', 'printer_width': '80', 'version_check': 'True', 'introspect': 'True', 'write_json': 'True', 'static_parser': 'True', 'use_colors': 'True', 'no_print': 'None'}
+[0m22:43:52.474821 [info ] [MainThread]: Creating dbt configuration folder at /root/.dbt
+[0m22:43:52.477915 [info ] [MainThread]: A project called financial_forecasting already exists here.
+[0m22:43:52.479949 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.51919794, "process_in_blocks": "21144", "process_kernel_time": 0.37086, "process_mem_max_rss": "127036", "process_out_blocks": "11000", "process_user_time": 5.319285}
+[0m22:43:52.481120 [debug] [MainThread]: Command `dbt init` succeeded at 22:43:52.480908 after 0.52 seconds
+[0m22:43:52.482073 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0c08bc5070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0c08e59b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e0c091dfe60>]}
+[0m22:43:52.483110 [debug] [MainThread]: Flushing usage events
+[0m22:43:52.518011 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:40:37.819104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5665226c60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56651b8bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5662702120>]}
+
+
+============================== 06:40:38.082886 | d8736047-6c45-4c98-9ebb-4687ca3dac72 ==============================
+[0m06:40:38.082886 [info ] [MainThread]: Running with dbt=1.10.11
+[0m06:40:38.084137 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'log_format': 'default', 'version_check': 'True', 'target_path': 'None', 'profiles_dir': '/root/.dbt', 'use_colors': 'True', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'partial_parse': 'True', 'warn_error': 'None', 'printer_width': '80', 'static_parser': 'True', 'write_json': 'True', 'log_path': 'logs', 'cache_selected_only': 'False', 'no_print': 'None', 'debug': 'False', 'fail_fast': 'False', 'invocation_command': 'dbt init financial_forecasting --profiles-dir /root/.dbt', 'indirect_selection': 'eager', 'use_experimental_parser': 'False'}
+[0m06:40:38.134690 [info ] [MainThread]: Creating dbt configuration folder at /root/.dbt
+[0m06:40:38.137106 [info ] [MainThread]: A project called financial_forecasting already exists here.
+[0m06:40:38.138665 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.42363727, "process_in_blocks": "21144", "process_kernel_time": 0.406186, "process_mem_max_rss": "127532", "process_out_blocks": "11000", "process_user_time": 5.216884}
+[0m06:40:38.139536 [debug] [MainThread]: Command `dbt init` succeeded at 06:40:38.139388 after 0.42 seconds
+[0m06:40:38.140241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5662476f00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f566292e780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f56631a2930>]}
+[0m06:40:38.141008 [debug] [MainThread]: Flushing usage events
+[0m06:40:38.427745 [debug] [MainThread]: An error was encountered while trying to flush usage events
