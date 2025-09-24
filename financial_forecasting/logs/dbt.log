@@ -2635,3 +2635,972 @@ drop view if exists "financial_data"."public"."my_second_dbt_model__dbt_backup" 
 [0m08:06:46.779752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc518a68bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc518a42690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc51801b950>]}
 [0m08:06:46.780530 [debug] [MainThread]: Flushing usage events
 [0m08:06:46.984644 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m05:55:55.796045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792ed07c5100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792ed0c6f1a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792ed2835940>]}
+
+
+============================== 05:55:56.136039 | 189e1a48-a6ae-47e6-ab84-bfa5d18c5972 ==============================
+[0m05:55:56.136039 [info ] [MainThread]: Running with dbt=1.10.11
+[0m05:55:56.137288 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'log_path': 'logs', 'use_colors': 'True', 'invocation_command': 'dbt debug --profiles-dir /root/.dbt --project-dir .', 'log_format': 'default', 'warn_error': 'None', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'quiet': 'False', 'target_path': 'None', 'no_print': 'None', 'version_check': 'True', 'partial_parse': 'True', 'profiles_dir': '/root/.dbt', 'empty': 'None', 'cache_selected_only': 'False', 'introspect': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False'}
+[0m05:55:56.196142 [info ] [MainThread]: dbt version: 1.10.11
+[0m05:55:56.197109 [info ] [MainThread]: python version: 3.12.11
+[0m05:55:56.197869 [info ] [MainThread]: python path: /usr/bin/python3
+[0m05:55:56.198649 [info ] [MainThread]: os info: Linux-6.6.97+-x86_64-with-glibc2.35
+[0m05:55:56.282709 [info ] [MainThread]: Using profiles dir at /root/.dbt
+[0m05:55:56.283762 [info ] [MainThread]: Using profiles.yml file at /root/.dbt/profiles.yml
+[0m05:55:56.284603 [info ] [MainThread]: Using dbt_project.yml file at ./dbt_project.yml
+[0m05:55:56.285579 [info ] [MainThread]: adapter type: postgres
+[0m05:55:56.286308 [info ] [MainThread]: adapter version: 1.9.1
+[0m05:55:56.511748 [info ] [MainThread]: Configuration:
+[0m05:55:56.512828 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m05:55:56.513740 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m05:55:56.514526 [info ] [MainThread]: Required dependencies:
+[0m05:55:56.515283 [debug] [MainThread]: Executing "git --help"
+[0m05:55:56.544347 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m05:55:56.545542 [debug] [MainThread]: STDERR: "b''"
+[0m05:55:56.546798 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m05:55:56.547852 [info ] [MainThread]: Connection:
+[0m05:55:56.548752 [info ] [MainThread]:   host: localhost
+[0m05:55:56.549694 [info ] [MainThread]:   port: 5432
+[0m05:55:56.550777 [info ] [MainThread]:   user: root
+[0m05:55:56.551691 [info ] [MainThread]:   database: financial_data
+[0m05:55:56.552506 [info ] [MainThread]:   schema: public
+[0m05:55:56.553255 [info ] [MainThread]:   connect_timeout: 10
+[0m05:55:56.554021 [info ] [MainThread]:   role: None
+[0m05:55:56.554726 [info ] [MainThread]:   search_path: None
+[0m05:55:56.555693 [info ] [MainThread]:   keepalives_idle: 0
+[0m05:55:56.556522 [info ] [MainThread]:   sslmode: None
+[0m05:55:56.557300 [info ] [MainThread]:   sslcert: None
+[0m05:55:56.558035 [info ] [MainThread]:   sslkey: None
+[0m05:55:56.558700 [info ] [MainThread]:   sslrootcert: None
+[0m05:55:56.559378 [info ] [MainThread]:   application_name: dbt
+[0m05:55:56.560031 [info ] [MainThread]:   retries: 1
+[0m05:55:56.560932 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m05:55:56.717439 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m05:55:56.786412 [debug] [MainThread]: Using postgres connection "debug"
+[0m05:55:56.787428 [debug] [MainThread]: On debug: select 1 as id
+[0m05:55:56.788233 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:55:56.806830 [debug] [MainThread]: SQL status: SELECT 1 in 0.019 seconds
+[0m05:55:56.808755 [debug] [MainThread]: On debug: Close
+[0m05:55:56.809883 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m05:55:56.811027 [info ] [MainThread]: [32mAll checks passed![0m
+[0m05:55:56.813144 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.4524509, "process_in_blocks": "23528", "process_kernel_time": 0.388389, "process_mem_max_rss": "142260", "process_out_blocks": "11216", "process_user_time": 5.1446}
+[0m05:55:56.814377 [debug] [MainThread]: Command `dbt debug` succeeded at 05:55:56.814194 after 1.45 seconds
+[0m05:55:56.815121 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m05:55:56.815886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792ed0ba6f00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792ed04cd970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792ed0a34a40>]}
+[0m05:55:56.816757 [debug] [MainThread]: Flushing usage events
+[0m05:55:56.974392 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:29:54.891032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c6474425460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c64762a5730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c647395f920>]}
+
+
+============================== 06:29:54.898193 | f0156cc5-be68-4fb3-b4fe-900fa8684ea5 ==============================
+[0m06:29:54.898193 [info ] [MainThread]: Running with dbt=1.10.11
+[0m06:29:54.899301 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'profiles_dir': '/root/.dbt', 'log_format': 'default', 'static_parser': 'True', 'cache_selected_only': 'False', 'use_colors': 'True', 'quiet': 'False', 'write_json': 'True', 'no_print': 'None', 'version_check': 'True', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt run', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'target_path': 'None', 'indirect_selection': 'eager', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'introspect': 'True', 'partial_parse': 'True', 'warn_error': 'None'}
+[0m06:29:55.359631 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f0156cc5-be68-4fb3-b4fe-900fa8684ea5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c6472ce24e0>]}
+[0m06:29:55.491374 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f0156cc5-be68-4fb3-b4fe-900fa8684ea5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c64734afda0>]}
+[0m06:29:55.492997 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m06:29:55.644135 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m06:29:56.999699 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m06:29:57.000919 [debug] [MainThread]: Partial parsing: added file: financial_forecasting://models/fact_monthly_revenue.sql
+[0m06:29:57.503231 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.financial_forecasting.fact_monthly_revenue' (models/fact_monthly_revenue.sql) depends on a node named 'stg_raw_saas_metrics' which was not found
+[0m06:29:57.505302 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.7413058, "process_in_blocks": "3208", "process_kernel_time": 0.329262, "process_mem_max_rss": "137260", "process_out_blocks": "0", "process_user_time": 5.284757}
+[0m06:29:57.506390 [debug] [MainThread]: Command `dbt run` failed at 06:29:57.506218 after 2.74 seconds
+[0m06:29:57.507231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c64735e0bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c6472984920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c6472d3dee0>]}
+[0m06:29:57.508114 [debug] [MainThread]: Flushing usage events
+[0m06:29:57.640518 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:30:44.927119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f17d914050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f17f7beae0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f17ce5e2d0>]}
+
+
+============================== 06:30:44.933112 | c6a91124-4cdd-4bda-b9b6-424785a73f7c ==============================
+[0m06:30:44.933112 [info ] [MainThread]: Running with dbt=1.10.11
+[0m06:30:44.934268 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'quiet': 'False', 'write_json': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'no_print': 'None', 'printer_width': '80', 'partial_parse': 'True', 'introspect': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'empty': 'False', 'cache_selected_only': 'False', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'static_parser': 'True', 'invocation_command': 'dbt run', 'version_check': 'True', 'profiles_dir': '/root/.dbt', 'warn_error': 'None', 'debug': 'False'}
+[0m06:30:45.295681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c6a91124-4cdd-4bda-b9b6-424785a73f7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f17d745e80>]}
+[0m06:30:45.425442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c6a91124-4cdd-4bda-b9b6-424785a73f7c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f17c8eec00>]}
+[0m06:30:45.427214 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m06:30:45.576866 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m06:30:45.801363 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m06:30:45.802872 [debug] [MainThread]: Partial parsing: added file: financial_forecasting://models/fact_monthly_revenue.sql
+[0m06:30:46.303664 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.financial_forecasting.fact_monthly_revenue' (models/fact_monthly_revenue.sql) depends on a node named 'stg_raw_saas_metrics' which was not found
+[0m06:30:46.305578 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.4985166, "process_in_blocks": "0", "process_kernel_time": 0.3481, "process_mem_max_rss": "137240", "process_out_blocks": "0", "process_user_time": 5.900228}
+[0m06:30:46.306684 [debug] [MainThread]: Command `dbt run` failed at 06:30:46.306512 after 1.50 seconds
+[0m06:30:46.307582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f17f6dc920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f17b3f7410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79f17f44dfd0>]}
+[0m06:30:46.308458 [debug] [MainThread]: Flushing usage events
+[0m06:30:46.440286 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:35:44.557816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c1f1b425a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c1f1890cfb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c1f1890ce30>]}
+
+
+============================== 06:35:44.566695 | 174b09b4-36f9-4b6e-92eb-6bcccc1b532f ==============================
+[0m06:35:44.566695 [info ] [MainThread]: Running with dbt=1.10.11
+[0m06:35:44.568304 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'target_path': 'None', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'fail_fast': 'False', 'use_colors': 'True', 'version_check': 'True', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'printer_width': '80', 'introspect': 'True', 'write_json': 'True', 'no_print': 'None', 'invocation_command': 'dbt run', 'static_parser': 'True', 'empty': 'False', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_cache_events': 'False'}
+[0m06:35:45.099306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '174b09b4-36f9-4b6e-92eb-6bcccc1b532f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c1f1b32aea0>]}
+[0m06:35:45.292179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '174b09b4-36f9-4b6e-92eb-6bcccc1b532f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c1f18d7a270>]}
+[0m06:35:45.294124 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m06:35:45.570720 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m06:35:45.857902 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m06:35:45.859421 [debug] [MainThread]: Partial parsing: added file: financial_forecasting://models/marts/fact_monthly_revenue.sql
+[0m06:35:46.600414 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.financial_forecasting.fact_monthly_revenue' (models/marts/fact_monthly_revenue.sql) depends on a node named 'stg_raw_saas_metrics' which was not found
+[0m06:35:46.602929 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.2211454, "process_in_blocks": "0", "process_kernel_time": 0.370343, "process_mem_max_rss": "137208", "process_out_blocks": "0", "process_user_time": 6.401648}
+[0m06:35:46.604395 [debug] [MainThread]: Command `dbt run` failed at 06:35:46.604160 after 2.22 seconds
+[0m06:35:46.605609 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c1f16f051c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c1f1a5248c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c1f1d7d3020>]}
+[0m06:35:46.606800 [debug] [MainThread]: Flushing usage events
+[0m06:35:46.740899 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:43:03.978026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc264cfb860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc264a51c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc264cf87a0>]}
+
+
+============================== 06:43:03.984270 | 33a66895-cf83-4d1a-a735-94a0744b2fa8 ==============================
+[0m06:43:03.984270 [info ] [MainThread]: Running with dbt=1.10.11
+[0m06:43:03.985413 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt parse', 'warn_error': 'None', 'version_check': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'debug': 'False', 'profiles_dir': '/root/.dbt', 'no_print': 'None', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'target_path': 'None', 'use_colors': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'write_json': 'True', 'partial_parse': 'True'}
+[0m06:43:04.349885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '33a66895-cf83-4d1a-a735-94a0744b2fa8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc26417c650>]}
+[0m06:43:04.481125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '33a66895-cf83-4d1a-a735-94a0744b2fa8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc264753c50>]}
+[0m06:43:04.482698 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m06:43:04.640660 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m06:43:04.865742 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m06:43:04.867059 [debug] [MainThread]: Partial parsing: added file: financial_forecasting://models/marts/fact_monthly_revenue.sql
+[0m06:43:05.385518 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.financial_forecasting.fact_monthly_revenue' (models/marts/fact_monthly_revenue.sql) depends on a node named 'stg_raw_saas_metrics' which was not found
+[0m06:43:05.387452 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": false, "command_wall_clock_time": 1.5288284, "process_in_blocks": "0", "process_kernel_time": 0.319961, "process_mem_max_rss": "137116", "process_out_blocks": "0", "process_user_time": 5.483153}
+[0m06:43:05.388539 [debug] [MainThread]: Command `dbt parse` failed at 06:43:05.388356 after 1.53 seconds
+[0m06:43:05.389414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc2645cbd70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc2631c7890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cc26417e7e0>]}
+[0m06:43:05.390243 [debug] [MainThread]: Flushing usage events
+[0m06:43:05.560435 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:43:28.718193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b59edb1bb60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b59ed079580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b59ed8fd220>]}
+
+
+============================== 06:43:28.724525 | 78c74ccc-2994-41d4-a4fa-f0f9f5adaf37 ==============================
+[0m06:43:28.724525 [info ] [MainThread]: Running with dbt=1.10.11
+[0m06:43:28.725741 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'warn_error': 'None', 'log_format': 'default', 'indirect_selection': 'eager', 'write_json': 'True', 'profiles_dir': '/root/.dbt', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'quiet': 'False', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'empty': 'None', 'log_path': 'logs', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'static_parser': 'True', 'no_print': 'None', 'invocation_command': 'dbt parse', 'log_cache_events': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m06:43:28.727561 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m06:43:28.729376 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": false, "command_wall_clock_time": 0.17188148, "process_in_blocks": "0", "process_kernel_time": 0.303344, "process_mem_max_rss": "123296", "process_out_blocks": "0", "process_user_time": 5.580661}
+[0m06:43:28.730360 [debug] [MainThread]: Command `dbt parse` failed at 06:43:28.730187 after 0.17 seconds
+[0m06:43:28.731211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b59ede7e330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b59ef6fc080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b59ecab1130>]}
+[0m06:43:28.732059 [debug] [MainThread]: Flushing usage events
+[0m06:43:28.854915 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:45:04.151946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c80005a92b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7fff8d99a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7fff580d70>]}
+
+
+============================== 06:45:04.158979 | 8aab5366-7590-4825-8c36-c7f8b784d1da ==============================
+[0m06:45:04.158979 [info ] [MainThread]: Running with dbt=1.10.11
+[0m06:45:04.160252 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'empty': 'None', 'version_check': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'write_json': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt parse', 'use_colors': 'True', 'profiles_dir': '/root/.dbt', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'printer_width': '80', 'partial_parse': 'True', 'target_path': 'None', 'quiet': 'False', 'log_format': 'default', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False'}
+[0m06:45:04.161870 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m06:45:04.163488 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": false, "command_wall_clock_time": 0.12932305, "process_in_blocks": "0", "process_kernel_time": 0.287051, "process_mem_max_rss": "123512", "process_out_blocks": "0", "process_user_time": 5.174418}
+[0m06:45:04.164531 [debug] [MainThread]: Command `dbt parse` failed at 06:45:04.164360 after 0.13 seconds
+[0m06:45:04.165330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7fffe1a1e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7fff522420>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7fff580d70>]}
+[0m06:45:04.166154 [debug] [MainThread]: Flushing usage events
+[0m06:45:04.340555 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:48:27.566638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b714e4a4800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b714bc2d4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b714bc2ea80>]}
+
+
+============================== 06:48:27.573852 | 61dbecbe-8dfa-4185-937f-2c6913ebaea5 ==============================
+[0m06:48:27.573852 [info ] [MainThread]: Running with dbt=1.10.11
+[0m06:48:27.575083 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'write_json': 'True', 'static_parser': 'True', 'empty': 'None', 'log_format': 'default', 'profiles_dir': '/root/.dbt', 'version_check': 'True', 'no_print': 'None', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'warn_error': 'None', 'fail_fast': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'quiet': 'False', 'debug': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt parse', 'send_anonymous_usage_stats': 'True'}
+[0m06:48:27.942148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '61dbecbe-8dfa-4185-937f-2c6913ebaea5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b714ad705f0>]}
+[0m06:48:28.076802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '61dbecbe-8dfa-4185-937f-2c6913ebaea5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b714c523c80>]}
+[0m06:48:28.078699 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m06:48:28.247989 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m06:48:28.400242 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m06:48:28.401295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '61dbecbe-8dfa-4185-937f-2c6913ebaea5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b7149d558e0>]}
+[0m06:48:31.218767 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two models with the name "stg_raw_saas_metrics_data".
+  
+  Since these resources have the same name, dbt will be unable to find the correct resource
+  when looking for ref("stg_raw_saas_metrics_data").
+  
+  To fix this, change the name of one of these resources:
+  - model.financial_forecasting.stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)
+  - model.financial_forecasting.stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)
+[0m06:48:31.221736 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": false, "command_wall_clock_time": 4.0078187, "process_in_blocks": "0", "process_kernel_time": 0.357332, "process_mem_max_rss": "138272", "process_out_blocks": "0", "process_user_time": 6.832469}
+[0m06:48:31.223688 [debug] [MainThread]: Command `dbt parse` failed at 06:48:31.223388 after 4.01 seconds
+[0m06:48:31.225022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b714b685ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b714a905eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b714a165fa0>]}
+[0m06:48:31.227995 [debug] [MainThread]: Flushing usage events
+[0m06:48:31.367235 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:50:43.857173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6eae84a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6df1a120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6e914e90>]}
+
+
+============================== 06:50:43.865378 | 0f707070-6ca0-4b87-99b2-2fb8ee0e1907 ==============================
+[0m06:50:43.865378 [info ] [MainThread]: Running with dbt=1.10.11
+[0m06:50:43.867025 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'empty': 'None', 'log_format': 'default', 'fail_fast': 'False', 'printer_width': '80', 'cache_selected_only': 'False', 'write_json': 'True', 'static_parser': 'True', 'warn_error': 'None', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'target_path': 'None', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'invocation_command': 'dbt parse', 'no_print': 'None', 'version_check': 'True', 'indirect_selection': 'eager', 'partial_parse': 'True', 'profiles_dir': '/root/.dbt', 'log_cache_events': 'False'}
+[0m06:50:44.413946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0f707070-6ca0-4b87-99b2-2fb8ee0e1907', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6e017c80>]}
+[0m06:50:44.600931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0f707070-6ca0-4b87-99b2-2fb8ee0e1907', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6db7ade0>]}
+[0m06:50:44.603120 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m06:50:44.883134 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m06:50:45.114511 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m06:50:45.115900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0f707070-6ca0-4b87-99b2-2fb8ee0e1907', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6e014a10>]}
+[0m06:50:47.319489 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two models with the name "stg_raw_saas_metrics_data".
+  
+  Since these resources have the same name, dbt will be unable to find the correct resource
+  when looking for ref("stg_raw_saas_metrics_data").
+  
+  To fix this, change the name of one of these resources:
+  - model.financial_forecasting.stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)
+  - model.financial_forecasting.stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)
+[0m06:50:47.322344 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": false, "command_wall_clock_time": 3.6356673, "process_in_blocks": "0", "process_kernel_time": 0.408614, "process_mem_max_rss": "138020", "process_out_blocks": "0", "process_user_time": 7.452647}
+[0m06:50:47.323779 [debug] [MainThread]: Command `dbt parse` failed at 06:50:47.323545 after 3.64 seconds
+[0m06:50:47.324932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6da69dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c6d120a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3c704960c0>]}
+[0m06:50:47.326118 [debug] [MainThread]: Flushing usage events
+[0m06:50:47.455926 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:54:22.410351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9a3073e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9a203d6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9a3205820>]}
+
+
+============================== 06:54:22.416463 | 50aceb9e-17be-4489-a142-365446dd5488 ==============================
+[0m06:54:22.416463 [info ] [MainThread]: Running with dbt=1.10.11
+[0m06:54:22.417602 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'log_format': 'default', 'use_colors': 'True', 'invocation_command': 'dbt parse', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'no_print': 'None', 'fail_fast': 'False', 'empty': 'None', 'version_check': 'True', 'debug': 'False', 'target_path': 'None', 'printer_width': '80', 'use_experimental_parser': 'False', 'warn_error': 'None', 'introspect': 'True', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'partial_parse': 'True'}
+[0m06:54:22.773766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '50aceb9e-17be-4489-a142-365446dd5488', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9a131ce90>]}
+[0m06:54:22.913488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '50aceb9e-17be-4489-a142-365446dd5488', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9a131c890>]}
+[0m06:54:22.915135 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m06:54:23.067572 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m06:54:23.225635 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m06:54:23.227090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '50aceb9e-17be-4489-a142-365446dd5488', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9a2559010>]}
+[0m06:54:24.707694 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two models with the name "stg_raw_saas_metrics_data".
+  
+  Since these resources have the same name, dbt will be unable to find the correct resource
+  when looking for ref("stg_raw_saas_metrics_data").
+  
+  To fix this, change the name of one of these resources:
+  - model.financial_forecasting.stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)
+  - model.financial_forecasting.stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)
+[0m06:54:24.709893 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": false, "command_wall_clock_time": 2.4187453, "process_in_blocks": "0", "process_kernel_time": 0.30736, "process_mem_max_rss": "138180", "process_out_blocks": "0", "process_user_time": 6.061742}
+[0m06:54:24.711043 [debug] [MainThread]: Command `dbt parse` failed at 06:54:24.710834 after 2.42 seconds
+[0m06:54:24.711914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9a25587a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe9a07989b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe99ff24aa0>]}
+[0m06:54:24.712760 [debug] [MainThread]: Flushing usage events
+[0m06:54:24.870065 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:54:39.052912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f768f699460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f769084a180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f768fe1caa0>]}
+
+
+============================== 06:54:39.059674 | fb5e9263-bef8-49e0-85e1-49abb6acdf74 ==============================
+[0m06:54:39.059674 [info ] [MainThread]: Running with dbt=1.10.11
+[0m06:54:39.061115 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'profiles_dir': '/root/.dbt', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'version_check': 'True', 'static_parser': 'True', 'no_print': 'None', 'use_colors': 'True', 'write_json': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'empty': 'None', 'log_format': 'default', 'fail_fast': 'False', 'invocation_command': 'dbt clean', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'quiet': 'False'}
+[0m06:54:39.332975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fb5e9263-bef8-49e0-85e1-49abb6acdf74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f768fb3ad20>]}
+[0m06:54:41.160998 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 2.2317998, "process_in_blocks": "0", "process_kernel_time": 0.276276, "process_mem_max_rss": "126788", "process_out_blocks": "0", "process_user_time": 4.187285}
+[0m06:54:41.162262 [debug] [MainThread]: Command `dbt clean` succeeded at 06:54:41.162063 after 2.23 seconds
+[0m06:54:41.163298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76902c5640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76901bc260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f76901be930>]}
+[0m06:54:41.164382 [debug] [MainThread]: Flushing usage events
+[0m06:54:41.296202 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m06:55:11.863616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a58a67237a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a58a617f590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a58a617f680>]}
+
+
+============================== 06:55:11.872426 | 6c630bf4-f35a-4c74-9ddc-5e498549eda4 ==============================
+[0m06:55:11.872426 [info ] [MainThread]: Running with dbt=1.10.11
+[0m06:55:11.874224 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'indirect_selection': 'eager', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'static_parser': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'printer_width': '80', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'log_cache_events': 'False', 'target_path': 'None', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt parse', 'debug': 'False', 'write_json': 'True', 'version_check': 'True'}
+[0m06:55:12.258676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6c630bf4-f35a-4c74-9ddc-5e498549eda4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a58ab707e00>]}
+[0m06:55:12.391861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6c630bf4-f35a-4c74-9ddc-5e498549eda4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a58a5ff5c40>]}
+[0m06:55:12.393452 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m06:55:12.544635 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m06:55:12.548771 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m06:55:12.550170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6c630bf4-f35a-4c74-9ddc-5e498549eda4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a58a64a1460>]}
+[0m06:55:14.055538 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two models with the name "stg_raw_saas_metrics_data".
+  
+  Since these resources have the same name, dbt will be unable to find the correct resource
+  when looking for ref("stg_raw_saas_metrics_data").
+  
+  To fix this, change the name of one of these resources:
+  - model.financial_forecasting.stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)
+  - model.financial_forecasting.stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)
+[0m06:55:14.057440 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": false, "command_wall_clock_time": 2.3827848, "process_in_blocks": "0", "process_kernel_time": 0.413107, "process_mem_max_rss": "138824", "process_out_blocks": "0", "process_user_time": 7.48196}
+[0m06:55:14.058513 [debug] [MainThread]: Command `dbt parse` failed at 06:55:14.058312 after 2.38 seconds
+[0m06:55:14.059366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a58a67237a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a58a473e390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a58a5b26ae0>]}
+[0m06:55:14.060185 [debug] [MainThread]: Flushing usage events
+[0m06:55:14.212158 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:03:46.469784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7844d50c4ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7844d65b4ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7844d3fb52b0>]}
+
+
+============================== 07:03:46.475986 | 4cd439d3-cf70-4da4-a464-71dd0040136b ==============================
+[0m07:03:46.475986 [info ] [MainThread]: Running with dbt=1.10.11
+[0m07:03:46.477202 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/root/.dbt', 'log_format': 'default', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'debug': 'False', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'static_parser': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'use_colors': 'True', 'empty': 'None', 'printer_width': '80', 'partial_parse': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'invocation_command': 'dbt clean', 'warn_error': 'None', 'indirect_selection': 'eager'}
+[0m07:03:46.775935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4cd439d3-cf70-4da4-a464-71dd0040136b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7844d6ba8800>]}
+[0m07:03:46.797475 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 0.44858983, "process_in_blocks": "0", "process_kernel_time": 0.314077, "process_mem_max_rss": "126384", "process_out_blocks": "0", "process_user_time": 5.369836}
+[0m07:03:46.798523 [debug] [MainThread]: Command `dbt clean` succeeded at 07:03:46.798356 after 0.45 seconds
+[0m07:03:46.799415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7844d4fe14c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7844d4fe0b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7844d4086d20>]}
+[0m07:03:46.800264 [debug] [MainThread]: Flushing usage events
+[0m07:03:46.943164 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:03:54.120142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7cdc2d6fc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7cda8c8c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7cda8ca8d0>]}
+
+
+============================== 07:03:54.126406 | 68621bd7-c683-4788-9e34-469bd145059a ==============================
+[0m07:03:54.126406 [info ] [MainThread]: Running with dbt=1.10.11
+[0m07:03:54.127594 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'no_print': 'None', 'indirect_selection': 'eager', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'use_colors': 'True', 'empty': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt parse', 'quiet': 'False', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'debug': 'False', 'printer_width': '80', 'version_check': 'True', 'log_format': 'default', 'target_path': 'None', 'use_experimental_parser': 'False', 'profiles_dir': '/root/.dbt', 'send_anonymous_usage_stats': 'True', 'write_json': 'True'}
+[0m07:03:54.602403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '68621bd7-c683-4788-9e34-469bd145059a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7cd979bad0>]}
+[0m07:03:54.812911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '68621bd7-c683-4788-9e34-469bd145059a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7cd95a3c50>]}
+[0m07:03:54.815874 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m07:03:55.038721 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m07:03:55.043770 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m07:03:55.045070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '68621bd7-c683-4788-9e34-469bd145059a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7cd9df4e30>]}
+[0m07:03:57.383921 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two models with the name "stg_raw_saas_metrics_data".
+  
+  Since these resources have the same name, dbt will be unable to find the correct resource
+  when looking for ref("stg_raw_saas_metrics_data").
+  
+  To fix this, change the name of one of these resources:
+  - model.financial_forecasting.stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)
+  - model.financial_forecasting.stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)
+[0m07:03:57.387100 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": false, "command_wall_clock_time": 3.4055438, "process_in_blocks": "0", "process_kernel_time": 0.379186, "process_mem_max_rss": "139224", "process_out_blocks": "0", "process_user_time": 6.872151}
+[0m07:03:57.389387 [debug] [MainThread]: Command `dbt parse` failed at 07:03:57.389151 after 3.41 seconds
+[0m07:03:57.391182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7cd968e1e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7cda5285f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7cd850e7e0>]}
+[0m07:03:57.392747 [debug] [MainThread]: Flushing usage events
+[0m07:03:57.524920 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:04:15.956416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bc0d9683b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bc0d915b020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bc0d93b5160>]}
+
+
+============================== 07:04:15.962949 | 45ad21d4-dff4-45dd-942f-f7a50c1c0855 ==============================
+[0m07:04:15.962949 [info ] [MainThread]: Running with dbt=1.10.11
+[0m07:04:15.964174 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'profiles_dir': '/root/.dbt', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'target_path': 'None', 'fail_fast': 'False', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'write_json': 'True', 'log_format': 'default', 'log_cache_events': 'False', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'cache_selected_only': 'False', 'empty': 'False', 'debug': 'False', 'version_check': 'True', 'no_print': 'None', 'use_colors': 'True', 'indirect_selection': 'eager', 'quiet': 'False', 'static_parser': 'True'}
+[0m07:04:16.332244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '45ad21d4-dff4-45dd-942f-f7a50c1c0855', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bc0d888c110>]}
+[0m07:04:16.466184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '45ad21d4-dff4-45dd-942f-f7a50c1c0855', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bc0d9205ee0>]}
+[0m07:04:16.467774 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m07:04:16.626278 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m07:04:16.630387 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m07:04:16.631650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '45ad21d4-dff4-45dd-942f-f7a50c1c0855', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bc0d85a3c50>]}
+[0m07:04:18.175009 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two models with the name "stg_raw_saas_metrics_data".
+  
+  Since these resources have the same name, dbt will be unable to find the correct resource
+  when looking for ref("stg_raw_saas_metrics_data").
+  
+  To fix this, change the name of one of these resources:
+  - model.financial_forecasting.stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)
+  - model.financial_forecasting.stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)
+[0m07:04:18.177491 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.346175, "process_in_blocks": "0", "process_kernel_time": 0.31043, "process_mem_max_rss": "138792", "process_out_blocks": "0", "process_user_time": 6.755055}
+[0m07:04:18.178915 [debug] [MainThread]: Command `dbt run` failed at 07:04:18.178672 after 2.35 seconds
+[0m07:04:18.180126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bc0d96573e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bc0db9854c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bc0d7dd6030>]}
+[0m07:04:18.181359 [debug] [MainThread]: Flushing usage events
+[0m07:04:18.310697 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:06:14.479781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77fbfbb78e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77fbfab35f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77fbfab34a40>]}
+
+
+============================== 07:06:14.486297 | 546f94e4-c4eb-46c4-acc1-0b00996b43f5 ==============================
+[0m07:06:14.486297 [info ] [MainThread]: Running with dbt=1.10.11
+[0m07:06:14.488085 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'use_colors': 'True', 'no_print': 'None', 'warn_error': 'None', 'empty': 'None', 'log_cache_events': 'False', 'log_format': 'default', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'version_check': 'True', 'invocation_command': 'dbt clean', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'quiet': 'False', 'target_path': 'None', 'indirect_selection': 'eager', 'static_parser': 'True', 'write_json': 'True', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs'}
+[0m07:06:14.767056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '546f94e4-c4eb-46c4-acc1-0b00996b43f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77fbfb893e60>]}
+[0m07:06:14.789135 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_success": true, "command_wall_clock_time": 1.0065807, "process_in_blocks": "0", "process_kernel_time": 0.361145, "process_mem_max_rss": "126424", "process_out_blocks": "0", "process_user_time": 5.894476}
+[0m07:06:14.790203 [debug] [MainThread]: Command `dbt clean` succeeded at 07:06:14.790038 after 1.01 seconds
+[0m07:06:14.791010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77fbfa914140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77fbfa916390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77fbfa8eb170>]}
+[0m07:06:14.791791 [debug] [MainThread]: Flushing usage events
+[0m07:06:14.920406 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:06:21.688365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b41491f75c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4147fdc560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b414810ee10>]}
+
+
+============================== 07:06:21.695178 | 92512a77-c174-4eb2-a249-9f0f87f9c38c ==============================
+[0m07:06:21.695178 [info ] [MainThread]: Running with dbt=1.10.11
+[0m07:06:21.696557 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'printer_width': '80', 'empty': 'None', 'log_format': 'default', 'debug': 'False', 'target_path': 'None', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'use_colors': 'True', 'no_print': 'None', 'introspect': 'True', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'profiles_dir': '/root/.dbt', 'write_json': 'True', 'version_check': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt parse', 'quiet': 'False', 'log_cache_events': 'False'}
+[0m07:06:22.061349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '92512a77-c174-4eb2-a249-9f0f87f9c38c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4148e72150>]}
+[0m07:06:22.194587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '92512a77-c174-4eb2-a249-9f0f87f9c38c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4148f1b7d0>]}
+[0m07:06:22.196479 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m07:06:22.350615 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m07:06:22.356564 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m07:06:22.357671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '92512a77-c174-4eb2-a249-9f0f87f9c38c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4147386f00>]}
+[0m07:06:24.731537 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'stg_raw_saas_metrics' in the 'models' section of file 'models/staging/schema.yml'
+[0m07:06:25.113679 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.financial_forecasting.unique_stg_raw_saas_metrics_customer_id.7dcce147ed' (models/staging/schema.yml) depends on a node named 'stg_raw_saas_metrics' in package '' which was not found
+[0m07:06:25.115253 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.financial_forecasting.not_null_stg_raw_saas_metrics_customer_id.cf049abd03' (models/staging/schema.yml) depends on a node named 'stg_raw_saas_metrics' in package '' which was not found
+[0m07:06:25.116476 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.financial_forecasting.not_null_stg_raw_saas_metrics_subscription_start_date.d6e62f7f04' (models/staging/schema.yml) depends on a node named 'stg_raw_saas_metrics' in package '' which was not found
+[0m07:06:25.310051 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.financial_forecasting.example
+[0m07:06:25.331515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '92512a77-c174-4eb2-a249-9f0f87f9c38c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b414569c650>]}
+[0m07:06:25.348137 [info ] [MainThread]: Performance info: /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/perf_info.json
+[0m07:06:25.536413 [debug] [MainThread]: Wrote artifact WritableManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/manifest.json
+[0m07:06:25.546164 [debug] [MainThread]: Wrote artifact SemanticManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/semantic_manifest.json
+[0m07:06:25.548671 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": true, "command_wall_clock_time": 3.987801, "process_in_blocks": "0", "process_kernel_time": 0.330353, "process_mem_max_rss": "146176", "process_out_blocks": "0", "process_user_time": 7.576481}
+[0m07:06:25.550057 [debug] [MainThread]: Command `dbt parse` succeeded at 07:06:25.549830 after 3.99 seconds
+[0m07:06:25.551121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b4148384d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b41480e35c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b41473f2030>]}
+[0m07:06:25.552285 [debug] [MainThread]: Flushing usage events
+[0m07:06:25.678902 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:10:14.575838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79bc30448470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79bc305d3ef0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79bc33128800>]}
+
+
+============================== 07:10:14.581999 | 5cfe99c8-f80f-4639-ae00-ae5dd35332c8 ==============================
+[0m07:10:14.581999 [info ] [MainThread]: Running with dbt=1.10.11
+[0m07:10:14.583251 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'introspect': 'True', 'target_path': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'write_json': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'version_check': 'True', 'no_print': 'None', 'invocation_command': 'dbt parse', 'static_parser': 'True', 'fail_fast': 'False', 'profiles_dir': '/root/.dbt', 'empty': 'None', 'warn_error': 'None', 'indirect_selection': 'eager', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs'}
+[0m07:10:14.933628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5cfe99c8-f80f-4639-ae00-ae5dd35332c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79bc3037d7f0>]}
+[0m07:10:15.073224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5cfe99c8-f80f-4639-ae00-ae5dd35332c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79bc3294fe00>]}
+[0m07:10:15.074777 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m07:10:15.238108 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m07:10:15.656462 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m07:10:15.658092 [debug] [MainThread]: Partial parsing: updated file: financial_forecasting://models/staging/schema.yml
+[0m07:10:16.228186 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.financial_forecasting.example
+[0m07:10:16.247054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5cfe99c8-f80f-4639-ae00-ae5dd35332c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79bc303164e0>]}
+[0m07:10:16.261324 [info ] [MainThread]: Performance info: /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/perf_info.json
+[0m07:10:16.387778 [debug] [MainThread]: Wrote artifact WritableManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/manifest.json
+[0m07:10:16.397571 [debug] [MainThread]: Wrote artifact SemanticManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/semantic_manifest.json
+[0m07:10:16.399624 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": true, "command_wall_clock_time": 1.9430096, "process_in_blocks": "0", "process_kernel_time": 0.323062, "process_mem_max_rss": "139192", "process_out_blocks": "0", "process_user_time": 5.718262}
+[0m07:10:16.400680 [debug] [MainThread]: Command `dbt parse` succeeded at 07:10:16.400502 after 1.94 seconds
+[0m07:10:16.401600 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79bc3037ef60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79bc358cfe00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79bc30630830>]}
+[0m07:10:16.402440 [debug] [MainThread]: Flushing usage events
+[0m07:10:16.530177 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:11:57.772477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f63501340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f62bdd5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f623cc860>]}
+
+
+============================== 07:11:57.780889 | 06d27765-217b-4ef2-b7a6-0d97875f53ac ==============================
+[0m07:11:57.780889 [info ] [MainThread]: Running with dbt=1.10.11
+[0m07:11:57.782544 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'target_path': 'None', 'printer_width': '80', 'fail_fast': 'False', 'version_check': 'True', 'static_parser': 'True', 'write_json': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'no_print': 'None', 'log_format': 'default', 'use_experimental_parser': 'False', 'quiet': 'False', 'empty': 'False', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'log_cache_events': 'False', 'profiles_dir': '/root/.dbt', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True'}
+[0m07:11:58.215469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '06d27765-217b-4ef2-b7a6-0d97875f53ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f61b7d550>]}
+[0m07:11:58.352647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '06d27765-217b-4ef2-b7a6-0d97875f53ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f6275aa80>]}
+[0m07:11:58.354589 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m07:11:58.520504 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m07:11:58.799587 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m07:11:58.800611 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m07:11:58.808850 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.financial_forecasting.example
+[0m07:11:58.870125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '06d27765-217b-4ef2-b7a6-0d97875f53ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f60f010a0>]}
+[0m07:11:59.115334 [debug] [MainThread]: Wrote artifact WritableManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/manifest.json
+[0m07:11:59.125169 [debug] [MainThread]: Wrote artifact SemanticManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/semantic_manifest.json
+[0m07:11:59.159053 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '06d27765-217b-4ef2-b7a6-0d97875f53ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f607357f0>]}
+[0m07:11:59.160591 [info ] [MainThread]: Found 2 models, 4 data tests, 1 source, 434 macros
+[0m07:11:59.161542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '06d27765-217b-4ef2-b7a6-0d97875f53ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f60f6e600>]}
+[0m07:11:59.164526 [info ] [MainThread]: 
+[0m07:11:59.165630 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m07:11:59.166360 [info ] [MainThread]: 
+[0m07:11:59.167333 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m07:11:59.173408 [debug] [ThreadPool]: Acquiring new postgres connection 'list_financial_data'
+[0m07:11:59.222124 [debug] [ThreadPool]: Using postgres connection "list_financial_data"
+[0m07:11:59.223147 [debug] [ThreadPool]: On list_financial_data: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "financial_forecasting", "target_name": "dev", "connection_name": "list_financial_data"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m07:11:59.223995 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:11:59.242846 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.019 seconds
+[0m07:11:59.245274 [debug] [ThreadPool]: On list_financial_data: Close
+[0m07:11:59.248115 [debug] [ThreadPool]: Acquiring new postgres connection 'list_financial_data_public'
+[0m07:11:59.258290 [debug] [ThreadPool]: Using postgres connection "list_financial_data_public"
+[0m07:11:59.259258 [debug] [ThreadPool]: On list_financial_data_public: BEGIN
+[0m07:11:59.260051 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:11:59.275881 [debug] [ThreadPool]: SQL status: BEGIN in 0.016 seconds
+[0m07:11:59.276907 [debug] [ThreadPool]: Using postgres connection "list_financial_data_public"
+[0m07:11:59.277749 [debug] [ThreadPool]: On list_financial_data_public: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "financial_forecasting", "target_name": "dev", "connection_name": "list_financial_data_public"} */
+select
+      'financial_data' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'financial_data' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'financial_data' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m07:11:59.282441 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.004 seconds
+[0m07:11:59.284708 [debug] [ThreadPool]: On list_financial_data_public: ROLLBACK
+[0m07:11:59.285830 [debug] [ThreadPool]: On list_financial_data_public: Close
+[0m07:11:59.294111 [debug] [MainThread]: Using postgres connection "master"
+[0m07:11:59.295064 [debug] [MainThread]: On master: BEGIN
+[0m07:11:59.295782 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:11:59.311670 [debug] [MainThread]: SQL status: BEGIN in 0.016 seconds
+[0m07:11:59.312667 [debug] [MainThread]: Using postgres connection "master"
+[0m07:11:59.313576 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "financial_forecasting", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m07:11:59.319761 [debug] [MainThread]: SQL status: SELECT 0 in 0.005 seconds
+[0m07:11:59.321899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '06d27765-217b-4ef2-b7a6-0d97875f53ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f6178cbc0>]}
+[0m07:11:59.322994 [debug] [MainThread]: On master: ROLLBACK
+[0m07:11:59.324054 [debug] [MainThread]: Using postgres connection "master"
+[0m07:11:59.324767 [debug] [MainThread]: On master: BEGIN
+[0m07:11:59.325854 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m07:11:59.326563 [debug] [MainThread]: On master: COMMIT
+[0m07:11:59.327243 [debug] [MainThread]: Using postgres connection "master"
+[0m07:11:59.327987 [debug] [MainThread]: On master: COMMIT
+[0m07:11:59.328923 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m07:11:59.329701 [debug] [MainThread]: On master: Close
+[0m07:11:59.333589 [debug] [Thread-1 (]: Began running node model.financial_forecasting.stg_raw_saas_metrics_data
+[0m07:11:59.335010 [info ] [Thread-1 (]: 1 of 2 START sql view model public.stg_raw_saas_metrics_data ................... [RUN]
+[0m07:11:59.336262 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_financial_data_public, now model.financial_forecasting.stg_raw_saas_metrics_data)
+[0m07:11:59.337197 [debug] [Thread-1 (]: Began compiling node model.financial_forecasting.stg_raw_saas_metrics_data
+[0m07:11:59.349997 [debug] [Thread-1 (]: Writing injected SQL for node "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m07:11:59.371750 [debug] [Thread-1 (]: Began executing node model.financial_forecasting.stg_raw_saas_metrics_data
+[0m07:11:59.424323 [debug] [Thread-1 (]: Writing runtime sql for node "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m07:11:59.455187 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m07:11:59.456343 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: BEGIN
+[0m07:11:59.457346 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:11:59.474247 [debug] [Thread-1 (]: SQL status: BEGIN in 0.017 seconds
+[0m07:11:59.475669 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m07:11:59.476852 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "financial_forecasting", "target_name": "dev", "node_id": "model.financial_forecasting.stg_raw_saas_metrics_data"} */
+
+  create view "financial_data"."public"."stg_raw_saas_metrics_data__dbt_tmp"
+    
+    
+  as (
+    -- This staging model performs initial cleaning on the raw saas data.
+-- It selects data from the source table (from sources.yml), standardizes column names,
+  --and casts the data into the correct types.
+
+WITH source_data AS (
+    SELECT
+        customer_id,
+        subscription_start_date,
+        monthly_recurring_revenue,
+        churn_date,
+        plan_type
+    FROM
+        "financial_data"."public"."raw_saas_metrics"
+)
+
+SELECT
+    CAST(customer_id AS INTEGER) AS customer_id,
+    CAST(subscription_start_date AS DATE) AS subscription_start_date,
+    CAST(monthly_recurring_revenue AS NUMERIC) AS monthly_recurring_revenue,
+    CAST(churn_date AS DATE) AS churn_date,
+    CAST(plan_type AS VARCHAR) AS plan_type
+FROM
+    source_data
+  );
+[0m07:11:59.478740 [debug] [Thread-1 (]: Postgres adapter: Postgres error: relation "public.raw_saas_metrics" does not exist
+LINE 19:         "financial_data"."public"."raw_saas_metrics"
+                 ^
+
+[0m07:11:59.479690 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: ROLLBACK
+[0m07:11:59.481003 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: Close
+[0m07:11:59.491383 [debug] [Thread-1 (]: Database Error in model stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)
+  relation "public.raw_saas_metrics" does not exist
+  LINE 19:         "financial_data"."public"."raw_saas_metrics"
+                   ^
+  compiled code at target/run/financial_forecasting/models/staging/stg_raw_saas_metrics_data.sql
+[0m07:11:59.494290 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '06d27765-217b-4ef2-b7a6-0d97875f53ac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f6330cf50>]}
+[0m07:11:59.495725 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model public.stg_raw_saas_metrics_data .......... [[31mERROR[0m in 0.16s]
+[0m07:11:59.496978 [debug] [Thread-1 (]: Finished running node model.financial_forecasting.stg_raw_saas_metrics_data
+[0m07:11:59.498061 [debug] [Thread-4 (]: Marking all children of 'model.financial_forecasting.stg_raw_saas_metrics_data' to be skipped because of status 'error'.  Reason: Database Error in model stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)
+  relation "public.raw_saas_metrics" does not exist
+  LINE 19:         "financial_data"."public"."raw_saas_metrics"
+                   ^
+  compiled code at target/run/financial_forecasting/models/staging/stg_raw_saas_metrics_data.sql.
+[0m07:11:59.500354 [debug] [Thread-1 (]: Began running node model.financial_forecasting.fact_monthly_revenue
+[0m07:11:59.501268 [info ] [Thread-1 (]: 2 of 2 SKIP relation public.fact_monthly_revenue ............................... [[33mSKIP[0m]
+[0m07:11:59.502222 [debug] [Thread-1 (]: Finished running node model.financial_forecasting.fact_monthly_revenue
+[0m07:11:59.504137 [debug] [MainThread]: Using postgres connection "master"
+[0m07:11:59.504903 [debug] [MainThread]: On master: BEGIN
+[0m07:11:59.505609 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m07:11:59.521729 [debug] [MainThread]: SQL status: BEGIN in 0.016 seconds
+[0m07:11:59.522746 [debug] [MainThread]: On master: COMMIT
+[0m07:11:59.523575 [debug] [MainThread]: Using postgres connection "master"
+[0m07:11:59.524310 [debug] [MainThread]: On master: COMMIT
+[0m07:11:59.525229 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m07:11:59.525923 [debug] [MainThread]: On master: Close
+[0m07:11:59.527044 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:11:59.528003 [debug] [MainThread]: Connection 'list_financial_data' was properly closed.
+[0m07:11:59.528877 [debug] [MainThread]: Connection 'model.financial_forecasting.stg_raw_saas_metrics_data' was properly closed.
+[0m07:11:59.529911 [info ] [MainThread]: 
+[0m07:11:59.530885 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.36 seconds (0.36s).
+[0m07:11:59.532280 [debug] [MainThread]: Command end result
+[0m07:11:59.566083 [debug] [MainThread]: Wrote artifact WritableManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/manifest.json
+[0m07:11:59.577061 [debug] [MainThread]: Wrote artifact SemanticManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/semantic_manifest.json
+[0m07:11:59.593020 [debug] [MainThread]: Wrote artifact RunExecutionResult to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/run_results.json
+[0m07:11:59.594709 [info ] [MainThread]: 
+[0m07:11:59.595950 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m07:11:59.597057 [info ] [MainThread]: 
+[0m07:11:59.597950 [error] [MainThread]: [31mFailure in model stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)[0m
+[0m07:11:59.598872 [error] [MainThread]:   Database Error in model stg_raw_saas_metrics_data (models/staging/stg_raw_saas_metrics_data.sql)
+  relation "public.raw_saas_metrics" does not exist
+  LINE 19:         "financial_data"."public"."raw_saas_metrics"
+                   ^
+  compiled code at target/run/financial_forecasting/models/staging/stg_raw_saas_metrics_data.sql
+[0m07:11:59.599650 [info ] [MainThread]: 
+[0m07:11:59.600452 [info ] [MainThread]:   compiled code at target/compiled/financial_forecasting/models/staging/stg_raw_saas_metrics_data.sql
+[0m07:11:59.601195 [info ] [MainThread]: 
+[0m07:11:59.602012 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=2
+[0m07:11:59.603853 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.0181222, "process_in_blocks": "128", "process_kernel_time": 0.414294, "process_mem_max_rss": "146344", "process_out_blocks": "0", "process_user_time": 6.960706}
+[0m07:11:59.604834 [debug] [MainThread]: Command `dbt run` failed at 07:11:59.604669 after 2.02 seconds
+[0m07:11:59.605679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f652e1970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f62475f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f623cc860>]}
+[0m07:11:59.606524 [debug] [MainThread]: Flushing usage events
+[0m07:11:59.747032 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:15:50.835996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b94d13828d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b94cee8ab70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b94cf59bb00>]}
+
+
+============================== 07:15:50.842299 | eefade10-f77b-49e9-a86f-571c23809489 ==============================
+[0m07:15:50.842299 [info ] [MainThread]: Running with dbt=1.10.11
+[0m07:15:50.843489 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'version_check': 'True', 'invocation_command': 'dbt debug --profiles-dir /root/.dbt --project-dir .', 'use_experimental_parser': 'False', 'introspect': 'True', 'target_path': 'None', 'profiles_dir': '/root/.dbt', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'static_parser': 'True', 'debug': 'False', 'use_colors': 'True', 'write_json': 'True', 'fail_fast': 'False', 'quiet': 'False', 'partial_parse': 'True', 'printer_width': '80', 'empty': 'None', 'no_print': 'None', 'log_path': 'logs', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m07:15:50.857407 [info ] [MainThread]: dbt version: 1.10.11
+[0m07:15:50.858399 [info ] [MainThread]: python version: 3.12.11
+[0m07:15:50.859145 [info ] [MainThread]: python path: /usr/bin/python3
+[0m07:15:50.859878 [info ] [MainThread]: os info: Linux-6.6.97+-x86_64-with-glibc2.35
+[0m07:15:50.943715 [info ] [MainThread]: Using profiles dir at /root/.dbt
+[0m07:15:50.944775 [info ] [MainThread]: Using profiles.yml file at /root/.dbt/profiles.yml
+[0m07:15:50.945559 [info ] [MainThread]: Using dbt_project.yml file at ./dbt_project.yml
+[0m07:15:50.946537 [info ] [MainThread]: adapter type: postgres
+[0m07:15:50.947253 [info ] [MainThread]: adapter version: 1.9.1
+[0m07:15:51.154205 [info ] [MainThread]: Configuration:
+[0m07:15:51.155276 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m07:15:51.156095 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m07:15:51.157094 [info ] [MainThread]: Required dependencies:
+[0m07:15:51.158133 [debug] [MainThread]: Executing "git --help"
+[0m07:15:51.165700 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:15:51.167166 [debug] [MainThread]: STDERR: "b''"
+[0m07:15:51.168215 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m07:15:51.169283 [info ] [MainThread]: Connection:
+[0m07:15:51.170326 [info ] [MainThread]:   host: localhost
+[0m07:15:51.171305 [info ] [MainThread]:   port: 5432
+[0m07:15:51.172255 [info ] [MainThread]:   user: root
+[0m07:15:51.173265 [info ] [MainThread]:   database: financial_data
+[0m07:15:51.174253 [info ] [MainThread]:   schema: public
+[0m07:15:51.175220 [info ] [MainThread]:   connect_timeout: 10
+[0m07:15:51.176182 [info ] [MainThread]:   role: None
+[0m07:15:51.177163 [info ] [MainThread]:   search_path: None
+[0m07:15:51.178138 [info ] [MainThread]:   keepalives_idle: 0
+[0m07:15:51.179088 [info ] [MainThread]:   sslmode: None
+[0m07:15:51.180018 [info ] [MainThread]:   sslcert: None
+[0m07:15:51.180946 [info ] [MainThread]:   sslkey: None
+[0m07:15:51.181901 [info ] [MainThread]:   sslrootcert: None
+[0m07:15:51.182865 [info ] [MainThread]:   application_name: dbt
+[0m07:15:51.184145 [info ] [MainThread]:   retries: 1
+[0m07:15:51.185603 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m07:15:51.328417 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m07:15:51.361342 [debug] [MainThread]: Using postgres connection "debug"
+[0m07:15:51.362312 [debug] [MainThread]: On debug: select 1 as id
+[0m07:15:51.363070 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:15:51.380212 [debug] [MainThread]: SQL status: SELECT 1 in 0.017 seconds
+[0m07:15:51.382080 [debug] [MainThread]: On debug: Close
+[0m07:15:51.383115 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m07:15:51.384268 [info ] [MainThread]: [32mAll checks passed![0m
+[0m07:15:51.386389 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.6681729, "process_in_blocks": "0", "process_kernel_time": 0.316523, "process_mem_max_rss": "138696", "process_out_blocks": "0", "process_user_time": 4.400701}
+[0m07:15:51.387575 [debug] [MainThread]: Command `dbt debug` succeeded at 07:15:51.387407 after 0.67 seconds
+[0m07:15:51.388316 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m07:15:51.389129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b94cf59bb00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b94cf085430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b94cdd0e2d0>]}
+[0m07:15:51.389943 [debug] [MainThread]: Flushing usage events
+[0m07:15:51.563245 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:16:10.912945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896fcff26c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896fcff20f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896fcff25a0>]}
+
+
+============================== 07:16:10.921091 | dc99fbd5-c908-488e-8d00-09c3f130dab1 ==============================
+[0m07:16:10.921091 [info ] [MainThread]: Running with dbt=1.10.11
+[0m07:16:10.922628 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'use_experimental_parser': 'False', 'static_parser': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'fail_fast': 'False', 'introspect': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'profiles_dir': '/root/.dbt', 'partial_parse': 'True', 'invocation_command': 'dbt parse', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'use_colors': 'True', 'log_cache_events': 'False', 'printer_width': '80', 'empty': 'None', 'debug': 'False'}
+[0m07:16:11.449266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dc99fbd5-c908-488e-8d00-09c3f130dab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896fd18be30>]}
+[0m07:16:11.638894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dc99fbd5-c908-488e-8d00-09c3f130dab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896fdd11700>]}
+[0m07:16:11.640830 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m07:16:11.912076 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m07:16:12.246550 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m07:16:12.247762 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m07:16:12.259193 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.financial_forecasting.example
+[0m07:16:12.347066 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dc99fbd5-c908-488e-8d00-09c3f130dab1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896fb725700>]}
+[0m07:16:12.361544 [info ] [MainThread]: Performance info: /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/perf_info.json
+[0m07:16:12.722847 [debug] [MainThread]: Wrote artifact WritableManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/manifest.json
+[0m07:16:12.733569 [debug] [MainThread]: Wrote artifact SemanticManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/semantic_manifest.json
+[0m07:16:12.736160 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": true, "command_wall_clock_time": 1.9912965, "process_in_blocks": "0", "process_kernel_time": 0.390345, "process_mem_max_rss": "136876", "process_out_blocks": "0", "process_user_time": 6.074998}
+[0m07:16:12.737811 [debug] [MainThread]: Command `dbt parse` succeeded at 07:16:12.737559 after 1.99 seconds
+[0m07:16:12.739035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896faf73f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896faf73b60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7896faf73860>]}
+[0m07:16:12.740186 [debug] [MainThread]: Flushing usage events
+[0m07:16:12.869692 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:16:19.509883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7920ed5405c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7920edb8a0c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7920ed78b470>]}
+
+
+============================== 07:16:19.516450 | 50fb0286-131e-438d-8e28-2e24aaba97e5 ==============================
+[0m07:16:19.516450 [info ] [MainThread]: Running with dbt=1.10.11
+[0m07:16:19.517630 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'empty': 'False', 'use_colors': 'True', 'fail_fast': 'False', 'debug': 'False', 'printer_width': '80', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'version_check': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'static_parser': 'True', 'log_format': 'default', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'target_path': 'None', 'no_print': 'None', 'write_json': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'log_cache_events': 'False'}
+[0m07:16:19.872573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '50fb0286-131e-438d-8e28-2e24aaba97e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7920ed29f830>]}
+[0m07:16:20.006075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '50fb0286-131e-438d-8e28-2e24aaba97e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7920ee215010>]}
+[0m07:16:20.007646 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m07:16:20.162149 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m07:16:20.373458 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m07:16:20.374447 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m07:16:20.382506 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.financial_forecasting.example
+[0m07:16:20.450232 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '50fb0286-131e-438d-8e28-2e24aaba97e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7920ec5b4e00>]}
+[0m07:16:20.704461 [debug] [MainThread]: Wrote artifact WritableManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/manifest.json
+[0m07:16:20.714537 [debug] [MainThread]: Wrote artifact SemanticManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/semantic_manifest.json
+[0m07:16:20.749523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '50fb0286-131e-438d-8e28-2e24aaba97e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7920ebd3be30>]}
+[0m07:16:20.750825 [info ] [MainThread]: Found 2 models, 4 data tests, 1 source, 434 macros
+[0m07:16:20.751983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '50fb0286-131e-438d-8e28-2e24aaba97e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7920ec5d0aa0>]}
+[0m07:16:20.755085 [info ] [MainThread]: 
+[0m07:16:20.755933 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m07:16:20.756920 [info ] [MainThread]: 
+[0m07:16:20.758156 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m07:16:20.764717 [debug] [ThreadPool]: Acquiring new postgres connection 'list_financial_data'
+[0m07:16:20.814664 [debug] [ThreadPool]: Using postgres connection "list_financial_data"
+[0m07:16:20.815700 [debug] [ThreadPool]: On list_financial_data: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "financial_forecasting", "target_name": "dev", "connection_name": "list_financial_data"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m07:16:20.816501 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:16:20.836103 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.019 seconds
+[0m07:16:20.838468 [debug] [ThreadPool]: On list_financial_data: Close
+[0m07:16:20.841246 [debug] [ThreadPool]: Acquiring new postgres connection 'list_financial_data_public'
+[0m07:16:20.851284 [debug] [ThreadPool]: Using postgres connection "list_financial_data_public"
+[0m07:16:20.852225 [debug] [ThreadPool]: On list_financial_data_public: BEGIN
+[0m07:16:20.852927 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m07:16:20.868321 [debug] [ThreadPool]: SQL status: BEGIN in 0.015 seconds
+[0m07:16:20.869286 [debug] [ThreadPool]: Using postgres connection "list_financial_data_public"
+[0m07:16:20.870094 [debug] [ThreadPool]: On list_financial_data_public: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "financial_forecasting", "target_name": "dev", "connection_name": "list_financial_data_public"} */
+select
+      'financial_data' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'financial_data' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'financial_data' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m07:16:20.874315 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.003 seconds
+[0m07:16:20.876537 [debug] [ThreadPool]: On list_financial_data_public: ROLLBACK
+[0m07:16:20.877590 [debug] [ThreadPool]: On list_financial_data_public: Close
+[0m07:16:20.885728 [debug] [MainThread]: Using postgres connection "master"
+[0m07:16:20.886660 [debug] [MainThread]: On master: BEGIN
+[0m07:16:20.887391 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:16:20.902682 [debug] [MainThread]: SQL status: BEGIN in 0.015 seconds
+[0m07:16:20.903652 [debug] [MainThread]: Using postgres connection "master"
+[0m07:16:20.904548 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "financial_forecasting", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m07:16:20.910191 [debug] [MainThread]: SQL status: SELECT 0 in 0.005 seconds
+[0m07:16:20.912323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '50fb0286-131e-438d-8e28-2e24aaba97e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7920eb9d9730>]}
+[0m07:16:20.913363 [debug] [MainThread]: On master: ROLLBACK
+[0m07:16:20.914383 [debug] [MainThread]: Using postgres connection "master"
+[0m07:16:20.915084 [debug] [MainThread]: On master: BEGIN
+[0m07:16:20.916155 [debug] [MainThread]: SQL status: BEGIN in 0.000 seconds
+[0m07:16:20.916870 [debug] [MainThread]: On master: COMMIT
+[0m07:16:20.917591 [debug] [MainThread]: Using postgres connection "master"
+[0m07:16:20.918244 [debug] [MainThread]: On master: COMMIT
+[0m07:16:20.919111 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m07:16:20.919844 [debug] [MainThread]: On master: Close
+[0m07:16:20.923883 [debug] [Thread-1 (]: Began running node model.financial_forecasting.stg_raw_saas_metrics_data
+[0m07:16:20.925302 [info ] [Thread-1 (]: 1 of 2 START sql view model public.stg_raw_saas_metrics_data ................... [RUN]
+[0m07:16:20.926297 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_financial_data_public, now model.financial_forecasting.stg_raw_saas_metrics_data)
+[0m07:16:20.927160 [debug] [Thread-1 (]: Began compiling node model.financial_forecasting.stg_raw_saas_metrics_data
+[0m07:16:20.938165 [debug] [Thread-1 (]: Writing injected SQL for node "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m07:16:20.946816 [debug] [Thread-1 (]: Began executing node model.financial_forecasting.stg_raw_saas_metrics_data
+[0m07:16:20.998632 [debug] [Thread-1 (]: Writing runtime sql for node "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m07:16:21.010744 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m07:16:21.012059 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: BEGIN
+[0m07:16:21.013278 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:16:21.030730 [debug] [Thread-1 (]: SQL status: BEGIN in 0.017 seconds
+[0m07:16:21.031859 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m07:16:21.032862 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "financial_forecasting", "target_name": "dev", "node_id": "model.financial_forecasting.stg_raw_saas_metrics_data"} */
+
+  create view "financial_data"."public"."stg_raw_saas_metrics_data__dbt_tmp"
+    
+    
+  as (
+    -- This staging model performs initial cleaning on the raw saas data.
+-- It selects data from the source table (from sources.yml), standardizes column names,
+  --and casts the data into the correct types.
+
+WITH source_data AS (
+    SELECT
+        customer_id,
+        subscription_start_date,
+        monthly_recurring_revenue,
+        churn_date,
+        plan_type
+    FROM
+        "financial_data"."public"."raw_saas_metrics"
+)
+
+SELECT
+    CAST(customer_id AS INTEGER) AS customer_id,
+    CAST(subscription_start_date AS DATE) AS subscription_start_date,
+    CAST(monthly_recurring_revenue AS NUMERIC) AS monthly_recurring_revenue,
+    CAST(churn_date AS DATE) AS churn_date,
+    CAST(plan_type AS VARCHAR) AS plan_type
+FROM
+    source_data
+  );
+[0m07:16:21.036236 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.002 seconds
+[0m07:16:21.046305 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m07:16:21.047590 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "financial_forecasting", "target_name": "dev", "node_id": "model.financial_forecasting.stg_raw_saas_metrics_data"} */
+alter table "financial_data"."public"."stg_raw_saas_metrics_data__dbt_tmp" rename to "stg_raw_saas_metrics_data"
+[0m07:16:21.049589 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m07:16:21.070950 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: COMMIT
+[0m07:16:21.072087 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m07:16:21.072981 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: COMMIT
+[0m07:16:21.079547 [debug] [Thread-1 (]: SQL status: COMMIT in 0.006 seconds
+[0m07:16:21.090039 [debug] [Thread-1 (]: Applying DROP to: "financial_data"."public"."stg_raw_saas_metrics_data__dbt_backup"
+[0m07:16:21.098648 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m07:16:21.099682 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "financial_forecasting", "target_name": "dev", "node_id": "model.financial_forecasting.stg_raw_saas_metrics_data"} */
+drop view if exists "financial_data"."public"."stg_raw_saas_metrics_data__dbt_backup" cascade
+[0m07:16:21.101080 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m07:16:21.105030 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: Close
+[0m07:16:21.108930 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '50fb0286-131e-438d-8e28-2e24aaba97e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7920efaea900>]}
+[0m07:16:21.110629 [info ] [Thread-1 (]: 1 of 2 OK created sql view model public.stg_raw_saas_metrics_data .............. [[32mCREATE VIEW[0m in 0.18s]
+[0m07:16:21.111896 [debug] [Thread-1 (]: Finished running node model.financial_forecasting.stg_raw_saas_metrics_data
+[0m07:16:21.113448 [debug] [Thread-1 (]: Began running node model.financial_forecasting.fact_monthly_revenue
+[0m07:16:21.114433 [info ] [Thread-1 (]: 2 of 2 START sql view model public.fact_monthly_revenue ........................ [RUN]
+[0m07:16:21.115379 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.financial_forecasting.stg_raw_saas_metrics_data, now model.financial_forecasting.fact_monthly_revenue)
+[0m07:16:21.116195 [debug] [Thread-1 (]: Began compiling node model.financial_forecasting.fact_monthly_revenue
+[0m07:16:21.120408 [debug] [Thread-1 (]: Writing injected SQL for node "model.financial_forecasting.fact_monthly_revenue"
+[0m07:16:21.130743 [debug] [Thread-1 (]: Began executing node model.financial_forecasting.fact_monthly_revenue
+[0m07:16:21.139237 [debug] [Thread-1 (]: Writing runtime sql for node "model.financial_forecasting.fact_monthly_revenue"
+[0m07:16:21.149680 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.fact_monthly_revenue"
+[0m07:16:21.151124 [debug] [Thread-1 (]: On model.financial_forecasting.fact_monthly_revenue: BEGIN
+[0m07:16:21.152027 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m07:16:21.167512 [debug] [Thread-1 (]: SQL status: BEGIN in 0.015 seconds
+[0m07:16:21.168643 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.fact_monthly_revenue"
+[0m07:16:21.169676 [debug] [Thread-1 (]: On model.financial_forecasting.fact_monthly_revenue: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "financial_forecasting", "target_name": "dev", "node_id": "model.financial_forecasting.fact_monthly_revenue"} */
+
+  create view "financial_data"."public"."fact_monthly_revenue__dbt_tmp"
+    
+    
+  as (
+    -- Build the final table for analysis.
+-- Adding the MRR metric to data from the staging layer.
+-- Uses a dbt ref macro.
+
+SELECT
+    DATE_TRUNC('month', subscription_start_date) AS subscription_month,
+    SUM(monthly_recurring_revenue) AS monthly_recurring_revenue
+FROM
+    "financial_data"."public"."stg_raw_saas_metrics_data"
+GROUP BY 1
+ORDER BY 1
+  );
+[0m07:16:21.173319 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.003 seconds
+[0m07:16:21.178243 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.fact_monthly_revenue"
+[0m07:16:21.179179 [debug] [Thread-1 (]: On model.financial_forecasting.fact_monthly_revenue: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "financial_forecasting", "target_name": "dev", "node_id": "model.financial_forecasting.fact_monthly_revenue"} */
+alter table "financial_data"."public"."fact_monthly_revenue__dbt_tmp" rename to "fact_monthly_revenue"
+[0m07:16:21.180545 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m07:16:21.183135 [debug] [Thread-1 (]: On model.financial_forecasting.fact_monthly_revenue: COMMIT
+[0m07:16:21.184049 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.fact_monthly_revenue"
+[0m07:16:21.184929 [debug] [Thread-1 (]: On model.financial_forecasting.fact_monthly_revenue: COMMIT
+[0m07:16:21.189437 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m07:16:21.193602 [debug] [Thread-1 (]: Applying DROP to: "financial_data"."public"."fact_monthly_revenue__dbt_backup"
+[0m07:16:21.195347 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.fact_monthly_revenue"
+[0m07:16:21.196282 [debug] [Thread-1 (]: On model.financial_forecasting.fact_monthly_revenue: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "financial_forecasting", "target_name": "dev", "node_id": "model.financial_forecasting.fact_monthly_revenue"} */
+drop view if exists "financial_data"."public"."fact_monthly_revenue__dbt_backup" cascade
+[0m07:16:21.197571 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.000 seconds
+[0m07:16:21.199884 [debug] [Thread-1 (]: On model.financial_forecasting.fact_monthly_revenue: Close
+[0m07:16:21.201378 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '50fb0286-131e-438d-8e28-2e24aaba97e5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7920e8834fe0>]}
+[0m07:16:21.203126 [info ] [Thread-1 (]: 2 of 2 OK created sql view model public.fact_monthly_revenue ................... [[32mCREATE VIEW[0m in 0.09s]
+[0m07:16:21.204631 [debug] [Thread-1 (]: Finished running node model.financial_forecasting.fact_monthly_revenue
+[0m07:16:21.206792 [debug] [MainThread]: Using postgres connection "master"
+[0m07:16:21.207586 [debug] [MainThread]: On master: BEGIN
+[0m07:16:21.208305 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m07:16:21.223779 [debug] [MainThread]: SQL status: BEGIN in 0.015 seconds
+[0m07:16:21.224781 [debug] [MainThread]: On master: COMMIT
+[0m07:16:21.225595 [debug] [MainThread]: Using postgres connection "master"
+[0m07:16:21.226325 [debug] [MainThread]: On master: COMMIT
+[0m07:16:21.227236 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m07:16:21.228010 [debug] [MainThread]: On master: Close
+[0m07:16:21.229195 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m07:16:21.230133 [debug] [MainThread]: Connection 'list_financial_data' was properly closed.
+[0m07:16:21.231027 [debug] [MainThread]: Connection 'model.financial_forecasting.fact_monthly_revenue' was properly closed.
+[0m07:16:21.232066 [info ] [MainThread]: 
+[0m07:16:21.233060 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.47 seconds (0.47s).
+[0m07:16:21.234539 [debug] [MainThread]: Command end result
+[0m07:16:21.268951 [debug] [MainThread]: Wrote artifact WritableManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/manifest.json
+[0m07:16:21.296785 [debug] [MainThread]: Wrote artifact SemanticManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/semantic_manifest.json
+[0m07:16:21.314298 [debug] [MainThread]: Wrote artifact RunExecutionResult to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/run_results.json
+[0m07:16:21.315231 [info ] [MainThread]: 
+[0m07:16:21.316801 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m07:16:21.317726 [info ] [MainThread]: 
+[0m07:16:21.318541 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m07:16:21.320182 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.9485322, "process_in_blocks": "0", "process_kernel_time": 0.367914, "process_mem_max_rss": "146076", "process_out_blocks": "0", "process_user_time": 5.40294}
+[0m07:16:21.321199 [debug] [MainThread]: Command `dbt run` succeeded at 07:16:21.321039 after 1.95 seconds
+[0m07:16:21.322037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7920ed2d54c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7920ed13e240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7920ed78b470>]}
+[0m07:16:21.322912 [debug] [MainThread]: Flushing usage events
+[0m07:16:21.449344 [debug] [MainThread]: An error was encountered while trying to flush usage events

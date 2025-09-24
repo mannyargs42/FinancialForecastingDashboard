@@ -6,7 +6,7 @@
 version: 2
 
 models:
-  - name: stg_raw_saas_metrics
+  - name: stg_raw_saas_metrics_data
     description: "Staging model for raw SaaS metrics data."
     columns:
       - name: customer_id
