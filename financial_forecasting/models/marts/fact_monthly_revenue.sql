@@ -1,8 +1,5 @@
 
--- Build the final table for analysis.
--- Adding the MRR metric to data from the staging layer.
--- Uses a dbt ref macro.
-
+-- models/marts/fact_monthly_revenue.sql
 SELECT
     DATE_TRUNC('month', subscription_start_date) AS subscription_month,
     SUM(monthly_recurring_revenue) AS monthly_recurring_revenue

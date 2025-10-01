@@ -1,10 +1,5 @@
 
-# This file holds the tests for the new staging model. 
-# It performs basic data quality checks for the customer_id & subscription_start_date cols.
-
-
 version: 2
-
 models:
   - name: stg_raw_saas_metrics_data
     description: "Staging model for raw SaaS metrics data."

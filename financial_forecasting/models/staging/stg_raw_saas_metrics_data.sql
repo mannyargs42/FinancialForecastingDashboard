@@ -1,8 +1,5 @@
 
--- This staging model performs initial cleaning on the raw saas data.
--- It selects data from the source table (from sources.yml), standardizes column names,
-  --and casts the data into the correct types.
-
+-- models/staging/stg_raw_saas_metrics_data.sql
 WITH source_data AS (
     SELECT
         customer_id,
@@ -13,7 +10,6 @@ WITH source_data AS (
     FROM
         {{ source('raw', 'raw_saas_metrics') }}
 )
-
 SELECT
     CAST(customer_id AS INTEGER) AS customer_id,
     CAST(subscription_start_date AS DATE) AS subscription_start_date,
