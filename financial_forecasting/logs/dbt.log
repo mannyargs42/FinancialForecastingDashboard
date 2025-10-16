@@ -4554,3 +4554,249 @@ drop view if exists "financial_data"."public"."fact_monthly_revenue__dbt_backup"
 [0m09:12:13.301991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4d3b0ab560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4d37a36900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4d3aeba330>]}
 [0m09:12:13.302766 [debug] [MainThread]: Flushing usage events
 [0m09:12:13.641003 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m08:30:36.716832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b619d35f6e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b619af9b4a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b619a5601d0>]}
+
+
+============================== 08:30:37.451466 | c5118567-32b6-450d-9dac-bb413a6cdd74 ==============================
+[0m08:30:37.451466 [info ] [MainThread]: Running with dbt=1.10.13
+[0m08:30:37.456110 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'introspect': 'True', 'target_path': 'None', 'log_path': '/content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/logs', 'no_print': 'None', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'False', 'version_check': 'True', 'use_colors': 'True', 'log_cache_events': 'False', 'write_json': 'True', 'warn_error': 'None', 'debug': 'False', 'static_parser': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'log_format': 'default', 'profiles_dir': '/root/.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --project-dir /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting --profiles-dir /root/.dbt'}
+[0m08:30:38.010190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c5118567-32b6-450d-9dac-bb413a6cdd74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b6199952360>]}
+[0m08:30:38.131033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c5118567-32b6-450d-9dac-bb413a6cdd74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b619a5e3b30>]}
+[0m08:30:38.132650 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m08:30:38.290912 [debug] [MainThread]: checksum: 9f0c81e2574b4ff463f3d16d080df83c6982fc0372c9feeacae0504ac9ea3ffe, vars: {}, profile: , target: , version: 1.10.13
+[0m08:30:40.575821 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m08:30:40.577021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c5118567-32b6-450d-9dac-bb413a6cdd74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b619a9dd850>]}
+[0m08:30:45.098243 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.financial_forecasting.example
+[0m08:30:45.111065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c5118567-32b6-450d-9dac-bb413a6cdd74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b6197817500>]}
+[0m08:30:45.870906 [debug] [MainThread]: Wrote artifact WritableManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/manifest.json
+[0m08:30:46.584685 [debug] [MainThread]: Wrote artifact SemanticManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/semantic_manifest.json
+[0m08:30:48.272368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c5118567-32b6-450d-9dac-bb413a6cdd74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b619785f1a0>]}
+[0m08:30:48.273879 [info ] [MainThread]: Found 2 models, 3 data tests, 1 source, 447 macros
+[0m08:30:48.275253 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c5118567-32b6-450d-9dac-bb413a6cdd74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b619c167b90>]}
+[0m08:30:48.278427 [info ] [MainThread]: 
+[0m08:30:48.279303 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m08:30:48.280263 [info ] [MainThread]: 
+[0m08:30:48.281361 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m08:30:48.287151 [debug] [ThreadPool]: Acquiring new postgres connection 'list_financial_data'
+[0m08:30:48.370756 [debug] [ThreadPool]: Using postgres connection "list_financial_data"
+[0m08:30:48.371776 [debug] [ThreadPool]: On list_financial_data: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "financial_forecasting", "target_name": "dev", "connection_name": "list_financial_data"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m08:30:48.372612 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:30:49.986356 [debug] [ThreadPool]: SQL status: SELECT 4 in 1.614 seconds
+[0m08:30:49.989951 [debug] [ThreadPool]: On list_financial_data: Close
+[0m08:30:49.993151 [debug] [ThreadPool]: Acquiring new postgres connection 'list_financial_data_public'
+[0m08:30:50.006521 [debug] [ThreadPool]: Using postgres connection "list_financial_data_public"
+[0m08:30:50.007776 [debug] [ThreadPool]: On list_financial_data_public: BEGIN
+[0m08:30:50.008837 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:30:51.597285 [debug] [ThreadPool]: SQL status: BEGIN in 1.588 seconds
+[0m08:30:51.598608 [debug] [ThreadPool]: Using postgres connection "list_financial_data_public"
+[0m08:30:51.600047 [debug] [ThreadPool]: On list_financial_data_public: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "financial_forecasting", "target_name": "dev", "connection_name": "list_financial_data_public"} */
+select
+      'financial_data' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'financial_data' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'financial_data' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m08:30:51.783398 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.182 seconds
+[0m08:30:51.785766 [debug] [ThreadPool]: On list_financial_data_public: ROLLBACK
+[0m08:30:51.961671 [debug] [ThreadPool]: On list_financial_data_public: Close
+[0m08:30:51.968366 [debug] [MainThread]: Using postgres connection "master"
+[0m08:30:51.969319 [debug] [MainThread]: On master: BEGIN
+[0m08:30:51.970107 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:30:53.557876 [debug] [MainThread]: SQL status: BEGIN in 1.588 seconds
+[0m08:30:53.558883 [debug] [MainThread]: Using postgres connection "master"
+[0m08:30:53.559823 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "financial_forecasting", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m08:30:53.742014 [debug] [MainThread]: SQL status: SELECT 0 in 0.181 seconds
+[0m08:30:53.744317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c5118567-32b6-450d-9dac-bb413a6cdd74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b619794f140>]}
+[0m08:30:53.745473 [debug] [MainThread]: On master: ROLLBACK
+[0m08:30:53.921346 [debug] [MainThread]: Using postgres connection "master"
+[0m08:30:53.922431 [debug] [MainThread]: On master: BEGIN
+[0m08:30:54.273642 [debug] [MainThread]: SQL status: BEGIN in 0.350 seconds
+[0m08:30:54.274697 [debug] [MainThread]: On master: COMMIT
+[0m08:30:54.275540 [debug] [MainThread]: Using postgres connection "master"
+[0m08:30:54.276260 [debug] [MainThread]: On master: COMMIT
+[0m08:30:54.452063 [debug] [MainThread]: SQL status: COMMIT in 0.175 seconds
+[0m08:30:54.453139 [debug] [MainThread]: On master: Close
+[0m08:30:54.456997 [debug] [Thread-1 (]: Began running node model.financial_forecasting.stg_raw_saas_metrics_data
+[0m08:30:54.458398 [info ] [Thread-1 (]: 1 of 2 START sql view model public.stg_raw_saas_metrics_data ................... [RUN]
+[0m08:30:54.459586 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_financial_data_public, now model.financial_forecasting.stg_raw_saas_metrics_data)
+[0m08:30:54.460500 [debug] [Thread-1 (]: Began compiling node model.financial_forecasting.stg_raw_saas_metrics_data
+[0m08:30:54.470096 [debug] [Thread-1 (]: Writing injected SQL for node "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m08:30:56.945019 [debug] [Thread-1 (]: Began executing node model.financial_forecasting.stg_raw_saas_metrics_data
+[0m08:30:56.990260 [debug] [Thread-1 (]: Writing runtime sql for node "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m08:30:59.433226 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m08:30:59.435035 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: BEGIN
+[0m08:30:59.436155 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:31:01.131479 [debug] [Thread-1 (]: SQL status: BEGIN in 1.695 seconds
+[0m08:31:01.132656 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m08:31:01.133691 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "financial_forecasting", "target_name": "dev", "node_id": "model.financial_forecasting.stg_raw_saas_metrics_data"} */
+
+  create view "financial_data"."public"."stg_raw_saas_metrics_data__dbt_tmp"
+    
+    
+  as (
+    -- models/staging/stg_raw_saas_metrics_data.sql
+WITH source_data AS (
+    SELECT
+        customer_id,
+        subscription_start_date,
+        monthly_recurring_revenue,
+        churn_date,
+        plan_type
+    FROM
+        "financial_data"."public"."raw_saas_metrics"
+)
+SELECT
+    CAST(customer_id AS INTEGER) AS customer_id,
+    CAST(subscription_start_date AS DATE) AS subscription_start_date,
+    CAST(monthly_recurring_revenue AS NUMERIC) AS monthly_recurring_revenue,
+    CAST(churn_date AS DATE) AS churn_date,
+    CAST(plan_type AS VARCHAR) AS plan_type
+FROM
+    source_data
+  );
+[0m08:31:01.314481 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.180 seconds
+[0m08:31:01.328763 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m08:31:01.330220 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "financial_forecasting", "target_name": "dev", "node_id": "model.financial_forecasting.stg_raw_saas_metrics_data"} */
+alter table "financial_data"."public"."stg_raw_saas_metrics_data__dbt_tmp" rename to "stg_raw_saas_metrics_data"
+[0m08:31:01.507026 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.176 seconds
+[0m08:31:01.526076 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: COMMIT
+[0m08:31:01.527214 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m08:31:01.528208 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: COMMIT
+[0m08:31:01.705546 [debug] [Thread-1 (]: SQL status: COMMIT in 0.176 seconds
+[0m08:31:01.715573 [debug] [Thread-1 (]: Applying DROP to: "financial_data"."public"."stg_raw_saas_metrics_data__dbt_backup"
+[0m08:31:01.724103 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.stg_raw_saas_metrics_data"
+[0m08:31:01.725194 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "financial_forecasting", "target_name": "dev", "node_id": "model.financial_forecasting.stg_raw_saas_metrics_data"} */
+drop view if exists "financial_data"."public"."stg_raw_saas_metrics_data__dbt_backup" cascade
+[0m08:31:01.901563 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.175 seconds
+[0m08:31:01.905893 [debug] [Thread-1 (]: On model.financial_forecasting.stg_raw_saas_metrics_data: Close
+[0m08:31:01.908960 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c5118567-32b6-450d-9dac-bb413a6cdd74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b6196c101a0>]}
+[0m08:31:01.910332 [info ] [Thread-1 (]: 1 of 2 OK created sql view model public.stg_raw_saas_metrics_data .............. [[32mCREATE VIEW[0m in 7.45s]
+[0m08:31:01.911703 [debug] [Thread-1 (]: Finished running node model.financial_forecasting.stg_raw_saas_metrics_data
+[0m08:31:01.913251 [debug] [Thread-1 (]: Began running node model.financial_forecasting.fact_monthly_revenue
+[0m08:31:01.914282 [info ] [Thread-1 (]: 2 of 2 START sql view model public.fact_monthly_revenue ........................ [RUN]
+[0m08:31:01.915295 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.financial_forecasting.stg_raw_saas_metrics_data, now model.financial_forecasting.fact_monthly_revenue)
+[0m08:31:01.916079 [debug] [Thread-1 (]: Began compiling node model.financial_forecasting.fact_monthly_revenue
+[0m08:31:01.920167 [debug] [Thread-1 (]: Writing injected SQL for node "model.financial_forecasting.fact_monthly_revenue"
+[0m08:31:03.274804 [debug] [Thread-1 (]: Began executing node model.financial_forecasting.fact_monthly_revenue
+[0m08:31:03.282335 [debug] [Thread-1 (]: Writing runtime sql for node "model.financial_forecasting.fact_monthly_revenue"
+[0m08:31:04.265614 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.fact_monthly_revenue"
+[0m08:31:04.266673 [debug] [Thread-1 (]: On model.financial_forecasting.fact_monthly_revenue: BEGIN
+[0m08:31:04.267907 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:31:05.901924 [debug] [Thread-1 (]: SQL status: BEGIN in 1.634 seconds
+[0m08:31:05.902966 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.fact_monthly_revenue"
+[0m08:31:05.903876 [debug] [Thread-1 (]: On model.financial_forecasting.fact_monthly_revenue: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "financial_forecasting", "target_name": "dev", "node_id": "model.financial_forecasting.fact_monthly_revenue"} */
+
+  create view "financial_data"."public"."fact_monthly_revenue__dbt_tmp"
+    
+    
+  as (
+    -- models/marts/fact_monthly_revenue.sql
+SELECT
+    DATE_TRUNC('month', subscription_start_date) AS subscription_month,
+    SUM(monthly_recurring_revenue) AS monthly_recurring_revenue
+FROM
+    "financial_data"."public"."stg_raw_saas_metrics_data"
+GROUP BY 1
+ORDER BY 1
+  );
+[0m08:31:06.082244 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.177 seconds
+[0m08:31:06.087179 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.fact_monthly_revenue"
+[0m08:31:06.088218 [debug] [Thread-1 (]: On model.financial_forecasting.fact_monthly_revenue: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "financial_forecasting", "target_name": "dev", "node_id": "model.financial_forecasting.fact_monthly_revenue"} */
+alter table "financial_data"."public"."fact_monthly_revenue__dbt_tmp" rename to "fact_monthly_revenue"
+[0m08:31:06.265323 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.176 seconds
+[0m08:31:06.268238 [debug] [Thread-1 (]: On model.financial_forecasting.fact_monthly_revenue: COMMIT
+[0m08:31:06.269268 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.fact_monthly_revenue"
+[0m08:31:06.270288 [debug] [Thread-1 (]: On model.financial_forecasting.fact_monthly_revenue: COMMIT
+[0m08:31:06.447299 [debug] [Thread-1 (]: SQL status: COMMIT in 0.176 seconds
+[0m08:31:06.451548 [debug] [Thread-1 (]: Applying DROP to: "financial_data"."public"."fact_monthly_revenue__dbt_backup"
+[0m08:31:06.453588 [debug] [Thread-1 (]: Using postgres connection "model.financial_forecasting.fact_monthly_revenue"
+[0m08:31:06.454870 [debug] [Thread-1 (]: On model.financial_forecasting.fact_monthly_revenue: /* {"app": "dbt", "dbt_version": "1.10.13", "profile_name": "financial_forecasting", "target_name": "dev", "node_id": "model.financial_forecasting.fact_monthly_revenue"} */
+drop view if exists "financial_data"."public"."fact_monthly_revenue__dbt_backup" cascade
+[0m08:31:06.631217 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.175 seconds
+[0m08:31:06.633807 [debug] [Thread-1 (]: On model.financial_forecasting.fact_monthly_revenue: Close
+[0m08:31:06.635285 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c5118567-32b6-450d-9dac-bb413a6cdd74', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b6195313f20>]}
+[0m08:31:06.636662 [info ] [Thread-1 (]: 2 of 2 OK created sql view model public.fact_monthly_revenue ................... [[32mCREATE VIEW[0m in 4.72s]
+[0m08:31:06.637899 [debug] [Thread-1 (]: Finished running node model.financial_forecasting.fact_monthly_revenue
+[0m08:31:06.640191 [debug] [MainThread]: Using postgres connection "master"
+[0m08:31:06.641142 [debug] [MainThread]: On master: BEGIN
+[0m08:31:06.641943 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m08:31:08.233952 [debug] [MainThread]: SQL status: BEGIN in 1.592 seconds
+[0m08:31:08.234973 [debug] [MainThread]: On master: COMMIT
+[0m08:31:08.235833 [debug] [MainThread]: Using postgres connection "master"
+[0m08:31:08.236616 [debug] [MainThread]: On master: COMMIT
+[0m08:31:08.412851 [debug] [MainThread]: SQL status: COMMIT in 0.175 seconds
+[0m08:31:08.413908 [debug] [MainThread]: On master: Close
+[0m08:31:08.415216 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:31:08.416050 [debug] [MainThread]: Connection 'list_financial_data' was properly closed.
+[0m08:31:08.416935 [debug] [MainThread]: Connection 'model.financial_forecasting.fact_monthly_revenue' was properly closed.
+[0m08:31:08.417827 [info ] [MainThread]: 
+[0m08:31:08.418613 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 20.14 seconds (20.14s).
+[0m08:31:08.419990 [debug] [MainThread]: Command end result
+[0m08:31:08.455955 [debug] [MainThread]: Wrote artifact WritableManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/manifest.json
+[0m08:31:08.468107 [debug] [MainThread]: Wrote artifact SemanticManifest to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/semantic_manifest.json
+[0m08:31:09.126273 [debug] [MainThread]: Wrote artifact RunExecutionResult to /content/drive/MyDrive/Colab Notebooks/FinancialForecastingDashboard/financial_forecasting/target/run_results.json
+[0m08:31:09.127211 [info ] [MainThread]: 
+[0m08:31:09.128856 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:31:09.130154 [info ] [MainThread]: 
+[0m08:31:09.131460 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m08:31:09.133141 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 47.39428, "process_in_blocks": "26680", "process_kernel_time": 0.539277, "process_mem_max_rss": "159396", "process_out_blocks": "11216", "process_user_time": 7.748677}
+[0m08:31:09.134163 [debug] [MainThread]: Command `dbt run` succeeded at 08:31:09.133990 after 47.40 seconds
+[0m08:31:09.135002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b619a4cf7a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b619a2c4b00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b619b2ec6b0>]}
+[0m08:31:09.135793 [debug] [MainThread]: Flushing usage events
+[0m08:31:10.053838 [debug] [MainThread]: An error was encountered while trying to flush usage events

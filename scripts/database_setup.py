@@ -1,11 +1,4 @@
-# -*- coding: utf-8 -*-
-"""database_setup.ipynb
 
-Original file is located at
-    https://colab.research.google.com/drive/1Knwdl0v-nq6d7mGyf3bQqeIVYjpgLNc6
-"""
-
-#!/usr/bin/env python3
 
 """
 This script sets up a PostgreSQL database and a 'raw_saas_metrics' table,
